@@ -1,7 +1,14 @@
+@font-face {
+  font-family: roboto;
+  src: url(./main_assets/fonts/Roboto-Regular.ttf);
+}
+
+
 *{
   padding: 0;
   margin: 0;
   box-sizing:border-box;
+  font-family: roboto;
 }
 
 html{
@@ -32,17 +39,29 @@ body{
       justify-content: center;
       background-color:rgb(255, 249, 244);
       padding: 4vh 4vw;
-      border-radius: 60%;
+      border-radius: 5px;
+      
 
       h1{
           font-size: 6rem;
-          color:rgb(23, 144, 23);
+          color:rgb(23, 65, 144);
           margin-bottom: 4vh;
+          background-color:skyblue;
+          border-radius: 60%;
+          padding: 4vh 4vw;
+      }
+
+      h2{
+        font-size: 4rem;
+        color:brown;
+        margin-bottom: 4vh;
+        letter-spacing: 10px;
       }
   
       a{
-          font-size: 4rem;
+          font-size: 3rem;
           color:burlywood;
+          margin-bottom: 2vh;
       }
   }
 }
