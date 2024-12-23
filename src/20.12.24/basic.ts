@@ -208,33 +208,68 @@ console.log(three_fixed);
 
 // * String-Methods-TS-Level-2_3
 
+// value aus input
 
+function searchAndHighlight(){
 
+    const InputElement =  document.querySelector("#search-input") as HTMLInputElement;
+    const inputValue = InputElement.value;
 
-let btn = document.querySelector("#search-button")
+    console.log("inputValue: "); 
+    console.log(inputValue); 
 
-btn?.addEventListener("click", searchAndMark)
+    const replaceValue = `<span class="bg-amber-200"> ${inputValue}</span>`
 
-function searchAndMark(){
+    console.log("replaceValue: "); 
+    console.log(replaceValue); 
+    
+    // value in text suchen - textinhalt replacen
+    
+    const articleElement = document.querySelector("#text") as HTMLDivElement
 
-    const searchInputElement = document.querySelector("#search-input") as HTMLInputElement
-    let searchText = document.querySelector(".text");
-    const searchOutput = `<span>${searchInputElement}</span>`
-    console.log(searchOutput);
+    const articleContent = articleElement.innerHTML;
 
-    if (searchText && searchInputElement) {
-        // console.log(searchText.innerHTML);
-        // console.log(searchText.innerText);
-        searchText.innerHTML = searchText.innerText.replaceAll(searchInputElement, searchOutput)
-    }
+    const changedArticleContent = articleContent.replaceAll(inputValue, replaceValue);
 
-
-    // if (searchInputElement){
-    //     let searchInput = searchInputElement.value
-    // }
-
-    // let searchText.innerHTML = searchText.innerHTML.replaceAll("searchInput", "'<span>' + searchInput + '</span>'")
+    articleElement.innerHTML = changedArticleContent;
 }
+
+const buttonElement = document.querySelector("#search-button") as HTMLInputElement;
+
+buttonElement.onclick = searchAndHighlight;
+
+
+
+
+
+
+
+
+
+// let btn = document.querySelector("#search-button")
+
+// btn?.addEventListener("click", searchAndMark)
+
+// function searchAndMark(){
+
+//     const searchInputElement = document.querySelector("#search-input") as HTMLInputElement
+//     let searchText = document.querySelector(".text");
+//     const searchOutput = `<span>${searchInputElement}</span>`
+//     console.log(searchOutput);
+
+//     // if (searchText && searchInputElement) {
+//     //     // console.log(searchText.innerHTML);
+//     //     // console.log(searchText.innerText);
+//     //     searchText.innerHTML = searchText.innerText.replaceAll(searchInputElement, searchOutput)
+//     // }
+
+
+//     // if (searchInputElement){
+//     //     let searchInput = searchInputElement.value
+//     // }
+
+//     // let searchText.innerHTML = searchText.innerHTML.replaceAll("searchInput", "'<span>' + searchInput + '</span>'")
+// }
 
 
 

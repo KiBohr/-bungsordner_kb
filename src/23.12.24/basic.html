@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="basic.ts" defer></script>
+    <title>23.12.24</title>
+</head>
+<body class="bg-red-100">
+<header class="m-[10vh] flex flex-col">
+    <h1 class=" uppercase text-5xl text-gray-600 mb-[4vh]">Tag 3 - Number methods</h1>
+    <a href="../../index.html" class="text-slate-400 cursor-pointer ml-[2vw]">Back to the ✨start✨</a>
+</header>
+    <main class="m-[10vh]">
+        <article class="flex flex-col gap-[2vh] items-center justify-center bg-red-300 rounded-xl p-[5vh] mb-[10vh]">
+    
+            <h2 class="text-2xl mb-[4vh] text-slate-500">Der Addierer</h2>
+
+            <input type="number" id="number-a" class="w-[25%] rounded-l mr-[1rem]"> 
+
+            <div class="text-slate-500"> + </div>
+
+            <input type="number" id="number-b" class="w-[25%] rounded-l mr-[1rem]"> 
+            
+            <div class="text-slate-500"> = </div>
+
+            <p id="result" class="text-green-700 text-[1.3rem] bg-[white] w-[10%]"></p> 
+            
+            <button id="addition-button" class=" rounded-l bg-[white] p-[0.5rem] text-[1.6rem] text-slate-400">Addieren</button>
+        </article>
+
+        <!-- ! Übungen                           -->
+
+        <!-- * Conditionals-TS-Level-1_4 (Ternary Operator) -->
+
+        <article class="flex flex-col gap-[2vh] items-center justify-center bg-slate-300 rounded-xl p-[5vh]">
+            <h3 class="text-2xl mb-[4vh] text-slate-500">Passwortüberprüfung</h2>
+
+            <div class="flex gap-[1vw] items-center">
+                <label for="password1" class="text-slate-500">Passwort</label>
+                <input type="password" id="password1">
+                <input type="button" value="Save" id="btn" class="border-2 p-[0.2rem] text-slate-500 cursor-pointer">
+            </div>
+            <p id="comment1" class="text-slate-600 text-[0.8rem]"></p>
+        </article>
+
+    </main>
+</body>
+</html>
