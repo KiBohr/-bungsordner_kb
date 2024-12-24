@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="basic.ts" defer></script>
+    <title>Tip Calculator</title>
+
+    <script>
+        tailwind.config = {
+        theme: {
+            letterSpacing: {
+              // "more-space": "1.4rem",
+              // "p-space": "1rem",
+            },
+            extend: {
+            colors: {
+                "light-orange": "#fb702b",
+                "bg-color": "#abc3ff",
+                "white": "#FFFFFF",
+                "beige": "#fbead8",
+                "dark-green": "#2e4c18",
+                "dark-orange": "#c34725",
+                "lime": "#e1ef97",
+            },
+            fontSize: {
+                "h1": "6rem",
+                "h2": "3rem",
+                "p-input": "1.8rem",
+                "button": "2.5rem"
+            },
+            
+            fontWeight: {
+                "thin": "100",
+                "light": "200",
+                "lighter": "300",
+                "medium": "400",
+            },
+        },
+            },
+        };
+    </script>
+
+<!-- * general styling -->
+<style type="text/tailwindcss">
+    @layer base{
+
+        @font-face {
+            font-family: inter;
+            src: url("./assets/fonts/Inter-VariableFont_opsz\,wght.ttf");
+        }
+
+        @font-face {
+                font-family: quicksand;
+                src: url("./assets/fonts/Quicksand-VariableFont_wght.ttf");
+            }
+
+        @font-face {
+                font-family: fas;
+                src: url("./assets/fonts/Fascinate-Regular.ttf");
+            }
+
+        html {
+            @apply bg-bg-color;
+            @apply text-dark-orange;
+            @apply text-[10px];
+            @apply font-[quicksand];
+        }
+    }
+</style>
+
+</head>
+<body>
+    <main class="flex justify-center items-center m-[10vh] h-[80vh] rounded-xl transition ease-in-out delay-200 hover:bg-lime">
+        <article class="bg-beige rounded-xl flex flex-col justify-center items-center gap-[4vh] p-[4vh] shadow-2xl">
+            <h1 class="text-dark-orange text-h1 font-[fas]">Tip Calculator</h1>
+
+            <div class="flex justify-center items-center flex-col">
+                <p class="text-light-orange text-h2 self-start tracking-widest hover:text-dark-orange">How much was it?</p>
+                <div class="flex gap-[2vh]">
+                    <input type="number" id="how-much" class="text-p-input shadow-md rounded-l bg-white text-dark-orange hover:bg-lime">
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center flex-col">
+                <p class="text-light-orange text-h2 self-start tracking-widest hover:text-dark-orange">How many people are you?</p>
+                <div class="flex gap-[2vh] text-p-input">
+                    <input type="number" id="how-many" class="text-p-input bg-white text-dark-orange shadow-md rounded-l hover:bg-lime">
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <p class="text-light-orange text-h2 self-start tracking-widest hover:text-dark-orange">How was the service?</p>
+                <select name="drop-down" id="drop-down" class="text-p-input cursor-pointer hover:bg-lime rounded-l shadow-md">
+                    <option value="1.2">great service</option>
+                    <option value="1.1">mid service</option>
+                    <option value="1.02">bad service</option>
+                </select>
+            </div>
+
+            <button class="bg-'[] p-[2vh] rounded-xl text-button font-[inter] uppercase bg-lime text-dark-green hover:bg-dark-green shadow-md hover:text-lime transition ease-in-out delay-50 " id="btn">Calculate</button>
+
+            <div id="output" class="flex flex-col justify-center items-center gap-[1rem] p-[1vh] rounded-2xl">
+                <div class="text-dark-green text-[1.5rem] font-semibold" id="tip-output"></div>
+
+                <div class="text-dark-green text-[1.5rem] font-semibold" id="bill-output"></div>
+
+                <div class="text-dark-green text-[1.5rem] font-bold" id="price-per-person-output"></div>
+            </div>
+            
+        </article>
+    </main>
+    <footer>
+        <p class="p-[1rem]">made by Kiwi - 24.12.2024</p>
+    </footer>
+</body>
+</html>
