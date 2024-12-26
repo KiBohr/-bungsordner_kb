@@ -8,7 +8,7 @@ This project is a Tip-Calculator, which lets the user calculate the tip, whole b
 
 ## function
 
-<img href=("./assets/img/Flowchart_Project_Tip-Calculator.png")>
+<img src="./assets/img/Flowchart_Project_Tip-Calculator.png">
 
 - Input field for bill price, people sharing and the quality of service
 - "calculate" button to give out the result of the calculated tip, the bill price and the price per person
