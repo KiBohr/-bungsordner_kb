@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="basic.ts" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>27.12.24</title>
+
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                "red": "#7b1c1a",
+                "dusty-blue": "#708d95",
+                "white": "#FFFFFF",
+                "beige": "#d2c7bc",
+                "grey": "#b7bdb9",
+                "brown": "#7a4635",
+                "dark-brown": "#24120b",
+            },
+        },
+    },
+};
+    </script>
+
+</head>
+<body class="m-[10vh] bg-brown text-dark-brown">
+    
+    <header class="bg-white rounded-md mb-[4vh] p-[2rem]">
+        <h1 class="text-red  text-[4rem]">27.12.24</h1>
+        <h2 class="text-[2rem] text-dusty-blue">Math & Date</h2>
+        <a href="../../index.html" class="text-grey bold hover:bg-grey hover:text-white rounded-md">☽ back to the start</a>
+    </header>
+    <main>
+
+        <!-- ! LiveCoding -->
+        <article class="mb-[2vh] bg-beige rounded-md p-[2rem]">
+            <h2 class="text-[2rem]">LiveCoding</h2>
+            <p id="date" class="text-red"></p>
+            <input type="text" id="input" >
+        </article>
+
+        <!-- ! Übungen -->
+
+        <article class=" bg-grey rounded-md mb-[4vh] p-[2rem]">
+            <h2 class="text-[2rem] text-dark-brown">Übungen</h2>
+
+<!-- * Date-TS-Level-1_1 -->
+
+            <div  class="mb-[2vh]">
+                <h3 class="text-[1.2rem] text-red">Date-TS-Level-1_1</h3>
+                <p id="date1"></p>
+                <p id="date2"></p>
+                <p id="date3"></p>
+                <p id="date4"></p>
+            </div>
+
+            <!-- * Date-TS-Level-2_1 -->
+
+            <div class="mb-[2vh]">
+                <h3 class="text-[1.2rem] text-red">Date-TS-Level-2_1</h3>
+                
+                <p id="output-1"></p>
+                <p id="output-2"></p>
+                <p id="output-3"></p>
+                <p id="output-4"></p>
+            </div>
+
+            <!-- * Date-TS-Level-3_2 -->
+
+            <div class="mb-[2vh]">
+                <h3 class="text-[1.2rem] text-red">Date-TS-Level-3_2</h3>
+
+                <p id="dif-year"></p>
+                <p id="dif-days"></p>
+                <p id="dif-hours"></p>
+                <p id="dif-minutes"></p>
+            </div>
+            
+        </article>
+    </main>
+</body>
+</html>
