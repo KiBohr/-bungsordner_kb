@@ -42,9 +42,42 @@
 
         <section class="bg-dark-red p-[2rem] rounded-sm text-lavender">
             <h2 class="text-[2rem]">Übungen</h2>
+            <p class="mb-[4vh]">dat meiste ist in der console :D</p>
             <article>
-                <p>dat meiste ist in der console :D</p>
+                <h3 class="text-[1.4rem]">Project-TS Spielstandsanzeige</h3>
+            </article>
 
+            <article class=" flex flex-col justify-center items-center gap-[10vh] bg-grey p-[3rem] w-[70%] rounded-md">
+                <div class="flex justify-center gap-[8vw] items-center">
+                    <div class="flex flex-col justify-center items-center gap-[10vh]">
+                        <div class="border-4 border-lavender rounded-md relative">
+                            <p id="output-home" class="text-[4rem] bg-white p-[6vw] z- rounded-md m-[1rem]">0</p>
+                            <p class="text-[2rem] bg-grey uppercase absolute top-[16.5rem] left-[3.5rem] p-[1vw] rounded-md z-1">Home</p>
+                        </div>
+                    
+                        <div class="flex gap-[1.5rem]">
+                            <button value="1" id="plus-1" class="border-2 border-lavender rounded-md p-[0.6rem] bg-white shadow-xl">+1</button>
+                            <button value="2" id="plus-2" class="border-2 rounded-md p-[0.6rem] bg-white border-lavender shadow-xl">+2</button>
+                            <button value="3" id="plus-3" class="border-2 rounded-md p-[0.6rem] bg-white border-lavender  shadow-xl">+3</button>
+                        </div>
+                    </div>
+    
+                    <!-- ? rechte Seite -->
+                    <div class="flex flex-col justify-center items-center gap-[10vh] text-orange">
+                        <div class="border-4 border-orange rounded-md relative">
+                            <p id="output-away" class="text-[4rem] bg-white p-[6vw] rounded-md m-[1rem] z-2 relative">0</p>
+                            <p class="text-[2rem] bg-grey uppercase absolute top-[16.2rem] right-[4rem] p-[1vw] rounded-md z-1">Away</p>
+                            
+                        </div>
+                    
+                        <div class="flex gap-[1.5rem]">
+                            <button value="1" id="plus-1_1" class="border-2 border-orange rounded-md p-[0.6rem] bg-white shadow-xl">+1</button>
+                            <button value="2" id="plus-2_1" class="border-2  border-orange rounded-md p-[0.6rem] bg-white  shadow-xl">+2</button>
+                            <button value="3" id="plus-3_1" class="border-2  border-orange rounded-md p-[0.6rem] bg-white  shadow-xl">+3</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="reset-button" class="border-2 text-[0.8rem] text-purple border-purple rounded-md p-[0.4rem] bg-grey shadow-xl w-[10%] transition ease-in-out hover:bg-purple hover:border-lavender hover:text-lavender">Reset</button>
             </article>
 
         </section>

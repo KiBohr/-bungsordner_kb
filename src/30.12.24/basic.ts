@@ -1,6 +1,9 @@
 //  ! LiveCoding :functions
 // console.log("hallo");
 
+import { compareDesc } from "date-fns";
+import { add } from "date-fns/fp";
+
 // function addNumbers(a : number, b : number) : number {
 
 //     return a + b;
@@ -168,3 +171,47 @@ function IntroduceMyself(Vorname: string, Nachname: string, Geburtsort: string, 
 }
 
 IntroduceMyself("Schnipps", "Schnups", "Schnupseldorf", 32, "Schnapfiland")
+
+
+// * Project-TS Spielstandsanzeige
+
+// ? output
+let outputHome = document.querySelector("#output-home") as HTMLParagraphElement
+let outputAway = document.querySelector("#output-away") as HTMLParagraphElement
+
+// ? buttons
+const resetButton = document.querySelector("#reset-button") as HTMLButtonElement
+const buttonPlus1 = document.querySelector("#plus-1") as HTMLButtonElement
+const buttonPlus2 = document.querySelector("#plus-2") as HTMLButtonElement
+const buttonPlus3 = document.querySelector("#plus-3") as HTMLButtonElement
+const buttonPlus1_1 = document.querySelector("#plus-1_1") as HTMLButtonElement
+const buttonPlus2_1 = document.querySelector("#plus-2_1") as HTMLButtonElement
+const buttonPlus3_1 = document.querySelector("#plus-3_1") as HTMLButtonElement
+
+let defaultHomeScore : number = 0;
+let defaultAwayScore : number = 0;
+
+function homePlus (add : number) {
+    defaultHomeScore = defaultHomeScore + add;
+    outputHome.innerHTML = `${defaultHomeScore}`;
+}
+
+buttonPlus1.onclick = () => homePlus(1);
+buttonPlus2.onclick = () => homePlus(2);
+buttonPlus3.onclick = () => homePlus(3);
+
+function awayPlus (add1 : number) {
+    defaultAwayScore = defaultAwayScore + add1;
+    outputAway.innerHTML = `${defaultAwayScore}`;
+}
+
+buttonPlus1_1.onclick = () => awayPlus(1);
+buttonPlus2_1.onclick = () => awayPlus(2);
+buttonPlus3_1.onclick = () => awayPlus(3);
+
+
+function reset() {
+    outputHome.innerHTML = `${defaultHomeScore = 0}`
+    outputAway.innerHTML = `${defaultAwayScore = 0}`
+}
+resetButton.onclick = reset
