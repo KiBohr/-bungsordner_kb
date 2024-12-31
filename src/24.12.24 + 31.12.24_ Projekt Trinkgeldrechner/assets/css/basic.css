@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: inter;
+    src: url("/src/24.12.24 + 31.12.24_ Projekt Trinkgeldrechner/assets/fonts/Inter-VariableFont_opsz,wght.ttf");
+  }
+
+  @font-face {
+    font-family: quicksand;
+    src: url("/src/24.12.24 + 31.12.24_ Projekt Trinkgeldrechner/assets/fonts/Quicksand-VariableFont_wght.ttf");
+  }
+
+  @font-face {
+    font-family: fas;
+    src: url("/src/24.12.24 + 31.12.24_ Projekt Trinkgeldrechner/assets/fonts/Fascinate-Regular.ttf");
+  }
+
+  html {
+    @apply bg-bg-color;
+    @apply text-dark-orange;
+    @apply text-[10px];
+    @apply font-[quicksand];
+  }
+}
