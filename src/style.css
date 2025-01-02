@@ -18,3 +18,9 @@
 .flexColCenter {
   @apply flex flex-col justify-center items-center;
 }
+
+/* * buttons */
+
+.basicBtn {
+  @apply text-[1.2rem] border-2 rounded-lg p-[1rem];
+}
