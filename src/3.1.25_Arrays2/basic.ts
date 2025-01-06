@@ -153,16 +153,42 @@ const artworksDates = [
     "Der Garten der Lüste - 1505"
 ]
 
+const splitArtworks = artworks.map(function(line){
+    return line.split("-");
+})
+
+const splitArtworksDates = artworksDates.map(function(line){
+    return line.split("-");
+})
+
+
+function findArtwork(name: string){
+    const entryWithArtist = splitArtworks.find((element)=>{
+        element.includes(name)
+        return element[0] === name;
+    })
+
+    const entryWithDate = splitArtworksDates.find((element)=>{
+        element.includes(name)
+        return element[0] === name;
+    })
+
+    if( entryWithArtist && entryWithDate) {
+        console.log(`'${name}' wurde von ${entryWithArtist[1]} im Jahre ${entryWithDate[1]} gemalt.`);
+    } else{
+        console.log(`Artwork '${name}' not found`);
+    }
+}
+
+findArtwork("die Sternennacht")
 
 
 
 // function findArtworkAndTellMeAboutIt (artworkName: string){
 
-    
 // }
 
 // findArtworkAndTellMeAboutIt("Schrei")
-
 
 // const findArtworkName = artworks.find( function(name) {
 //         console.log(name);
