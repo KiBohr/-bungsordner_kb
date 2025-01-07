@@ -16,13 +16,13 @@ import { fi } from "date-fns/locale";
 // // * Set
 
 // const shoppinglist = new Set([
-//     "Tofu", 
+//     "Tofu",     
 //     "Tomaten", 
 //     "Gurke", 
 //     "Litschis"]);
 
 
-// console.log("has Tofu");
+// // console.log("has Tofu");
 // console.log(shoppinglist.has("Tofu"));
 
 // shoppinglist.add("Papaya"); // added das angegebene Element
@@ -39,15 +39,15 @@ import { fi } from "date-fns/locale";
 // const deduplicatedArray = [...new Set(arrayWithDuplicateEntries)]
 
 
-// // * Map
+// * Map
 
-// const mapSpeisekarte = new Map<number, string>()
+const mapSpeisekarte = new Map<number, string>()
 
-// mapSpeisekarte.set(1, "Pad Thai")
-// mapSpeisekarte.set(2, "Bratkartoffeln")
-// mapSpeisekarte.set(3, "Red Curry")
+mapSpeisekarte.set(1, "Pad Thai")
+mapSpeisekarte.set(2, "Bratkartoffeln")
+mapSpeisekarte.set(3, "Red Curry")
 
-// console.log(mapSpeisekarte)
+console.log(mapSpeisekarte)
 
 
 // //Objekt zu Map
@@ -96,7 +96,7 @@ import { fi } from "date-fns/locale";
 // // const andereTatsächlicheKopieVonB = {...b, name: "Doris"}
 
 
-// ! Übungen
+// ! Übungen                                                            
 
 // * Tuple-TS-Level-1_1
 

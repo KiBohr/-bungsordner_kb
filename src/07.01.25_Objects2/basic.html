@@ -8,11 +8,78 @@
     <script type="module" src="basic.ts" defer></script>
 
 </head>
-<body>
+<body class="bg-stairs-yellow text-stairs-dark-blue font-[quicksand]">
     <header class="flex justify-between m-[2rem]">
         <h1 class="text-[2rem]">07.01.25 - objects2</h1>
-        <a class="basicBtn" href="../../index.html">back to the start</a>
+        <a class="basicBtn border-stairs-yellow text-stairs-yellow bg-stairs-dark-blue transition ease-in-out hover:bg-transparent hover:text-stairs-dark-blue" href="../../index.html">back to the start</a>
     </header>
+    <main>
+        <section class="m-[2rem] bg-stairs-light-yellow rounded-md">
+            <article class="p-[1rem]">
+                <h2 class="text-[1.5rem]  font-semibold mb-[4vh]">Themen:</h2>
+                <div>
+                    <!-- ? Tuple -->
+                    <div class=" flex flex-col gap-[2vh] text-stairs-olive mb-[6vh] border-b-2 border-white">
+                     <h3 class="text-[1.3rem] text-stairs-olive font-medium cursor-pointer hover:font-bold "> ▶︎ Tuple</h3>
+
+                     <h4 class="text-[1.1rem] underline">Beschreibung</h4>
+                     <p class="px-[2rem]">‣ ein Array mit fester Anzahl von Elementen und fester Länge (festlegbar)</p>
+
+                     <h4 class="text-[1.1rem] underline">Infos</h4>
+                     <p class="px-[2rem]">‣ jedes Element des arrays hat damit einen known type </p>
+
+                     <h4 class="text-[1.1rem] underline mb-[1vh]">Beispiel</h4>
+                     <div class="w-[40vw]">
+                        <img class="object-cover rounded-md  transition ease-in-out hover:shadow-md" src="./assets/img/Tuple Beispiel.png" alt="code of a simple tuple">
+                    </div>
+
+                   <a class="text-white font-semibold  cursor-pointer hover:text-stairs-dark-blue" href="https://www.w3schools.com/typescript/typescript_tuples.php">Link zu mehr Infos für Tuples</a>
+
+                </div>
+
+                <!-- ? Set -->
+                    <div class=" flex flex-col gap-[2vh] text-stairs-olive mb-[6vh] border-b-2 border-white">
+                     <h3 class="text-[1.3rem] text-stairs-olive font-medium cursor-pointer hover:font-bold "> ▶︎ Set</h3>
+
+                     <h4 class="text-[1.1rem] underline">Beschreibung</h4>
+                     <p class="px-[2rem]">‣ Sammlung von eindeutigen Werten mit gleichem Datentyp</p>
+
+                     <h4 class="text-[1.1rem] underline">Infos</h4>
+                     <p class="px-[2rem]">‣ doppelte Elemente werden gelöscht </p>
+
+                     <h4 class="text-[1.1rem] underline mb-[1vh]">Beispiel</h4>
+                     <div class="w-[20vw]">
+                        <img class="object-cover rounded-md  transition ease-in-out hover:shadow-md" src="./assets/img/Set Beispiel.png" alt="code of a simple Set">
+                    </div>
+                    <a class="text-white font-semibold  cursor-pointer hover:text-stairs-dark-blue" href="https://www.geeksforgeeks.org/typescript-set/">Link zu mehr Infos für Sets</a>
+                </div>
+
+                <!-- ? Map -->
+                    <div class=" flex flex-col gap-[2vh] text-stairs-olive mb-[6vh] border-b-2 border-white">
+                     <h3 class="text-[1.3rem] text-stairs-olive font-medium cursor-pointer hover:font-bold "> ▶︎ Map</h3>
+
+                     <h4 class="text-[1.1rem] underline">Beschreibung</h4>
+                     <p class="px-[2rem]">‣ Ein Objekt-Typ, der auch key/value Paare nutzt</p>
+
+                     <h4 class="text-[1.1rem] underline">Infos</h4>
+                     <p class="px-[2rem]">‣ gut geeignet für größere Datenmengen </p>
+                     <p class="px-[2rem]">‣ enthält keine default keys im Gegensatz zum Object</p>
+                     <p class="px-[2rem]">‣ .self() - zum Hinzufügen oder überschreiben von Werten</p>
+                     <p class="px-[2rem]">‣ .get()- zum Annavigieren von Elementen innerhalb des Objekts</p>
+                     <p class="px-[2rem]">‣ .has()- überprüft, ob das gesuchte value vorhanden ist → true/false</p>
+                     <p class="px-[2rem]">‣ .size()- gibt die Anzahl von key/value Paaren zurück</p>
+
+                     <h4 class="text-[1.1rem] underline mb-[1vh]">Beispiel</h4>
+                     <div class="w-[30vw]">
+                        <img class="object-cover rounded-md  transition ease-in-out hover:shadow-md" src="./assets/img/Map Beispiel.png" alt="code of a simple Set">
+                    </div>
+                    <a class="text-white font-semibold  cursor-pointer hover:text-stairs-dark-blue" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Link zu mehr Infos für Maps</a>
+                </div>
+            </div>
+              
+            </article>
+        </section>
+    </main>
     
 
 </body>

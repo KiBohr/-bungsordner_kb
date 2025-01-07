@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        //red & blue
+          //red & blue
             "dark-blue": "#4354a2",
             "mid-blue": "#627bbd",
             "burnt-red": "#a0352b",
@@ -25,6 +25,14 @@ export default {
             "dark-green": "#2e4c18",
             "dark-orange": "#c34725",
             "lime": "#e1ef97",
+
+            // yellow stairs 
+            "stairs-yellow": "#d8ac2f",
+            "stairs-light-yellow": "#dbc360",
+            "stairs-olive": "#5e4d17",
+            "stairs-sage": "#8b9c46",
+            "stairs-dark-blue": "#3f4c6c",
+            "stairs-light": "#ededde",
             
     },
     },
