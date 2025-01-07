@@ -49,5 +49,5 @@
 /* * buttons */
 
 .basicBtn {
-  @apply text-[0.9rem] border-2 rounded-lg p-[0.7rem];
+  @apply text-[0.9rem] border-2 rounded-lg p-[0.7rem] text-center;
 }
