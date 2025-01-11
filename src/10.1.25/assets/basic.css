@@ -1,0 +1,9 @@
+.theme-red {
+  background-color: rgb(171, 40, 40);
+  color: white;
+}
+
+.theme-yellow {
+  background-color: rgb(246, 246, 153);
+  color: blue;
+}

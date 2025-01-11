@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.1.25</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./assets/basic.css">
+    <script type="module" src="basic.ts" defer></script>
+
+</head>
+<body class="m-[3rem] bg-rb-iceblue text-rb-red">
+    <header class="flex justify-between items-center mb-[10vh]">
+        <h1 class="text-[2rem]">10.1.25 - DOM</h1>
+        <a class="basicBtn border-rb-red transition ease-in-out hover:border-rb-iceblue hover:text-rb-iceblue hover:bg-rb-red" href="../../index.html">back to where you came from</a>
+
+
+    </header>
+    <main>
+        <section class="border-t-2 border-b-2 border-rb-red mb-[10vh] bg-rb-grey-beige p-[2rem]">
+            <article class="flex flex-col gap-[4vh] mb-[10vh]">
+                <h2 class="text-[1.6rem] ">LiveCode</h2>
+                <h2 class=" text-[1.2rem]">classList.toggle()</h2>
+                <button class="basicBtn w-[10%] text-red-600" id="themes-switch-red">Red theme</button>
+                <button class="basicBtn w-[10%] text-yellow-500" id="themes-switch-yel">Yellow theme</button>
+                </article>
+
+                <article>
+                    <h3 class="text-[1.3rem]">my shopping list</h3>
+                    <form>
+                        <input type="text" name="" id="shopping-input" placeholder="Put in">
+                        <button class="basicBtn" id="shopping-button">Add to list</button>
+                        <button class="basicBtn" id="shopping-delete" type="button">delete your List</button>
+                        <ul id="shopping-list">
+                        </ul>
+                    </form>
+                </article>
+        </section>
+
+        <section class="bg-rb-beige">
+            <h2 class="text-[2rem]">Übungen</h2>
+            <article class="border-b-2 border-t-2 border-rb-red flex flex-col justify-center items-center gap-[1vh]  p-[2rem]">
+                <h3 class="text-[1.3rem] mb-[3vh]">DOM-TS_Level-1_4</h3>
+                <div class="flex flex-col justify-center items-center gap-[2vh] border-2 border-rb-red p-[1rem] rounded-md">
+                    <h4 class="underline">text and date</h4>
+                    <input class="text-rb-red rounded-md" type="text" id="input-text" placeholder="write your text">
+                    <button id="text-button" class="basicBtn border-rb-red transition ease-in-out hover:border-rb-iceblue hover:text-rb-iceblue hover:bg-rb-red">Add text</button>
+                </div>
+                <div id="output-text"></div> 
+            </article>
+
+<!-- ? next exercise -->
+            <article class="flex flex-col gap-[2vh] p-[2rem] border-b-2 border-rb-red mb-[10vh]">
+                <h3 class="text-[1.3rem]">DOM-TS-Level-1_2</h3>
+                <div>
+                    <div id="info"></div>
+                    <div id="container"></div>
+                </div>
+            </article>
+
+<!-- ? next exercise -->
+            <article class="flex flex-col items-center gap-[4vh] p-[2rem] border-b-2 border-rb-red mb-[10vh]">
+                <h3 class="text-[1.3rem]">DOM-TS-Level-1_3</h3>
+                <div class="w-[50%] flex flex-col gap-[1vh]" id="gallery"></div>
+            </article>
+
+<!-- ? next exercise -->
+            <article class="flex flex-col items-center gap-[4vh] p-[2rem] border-b-2 border-rb-red mb-[10vh]">
+                <h3 class="text-[1.3rem]">Dom-Elements-TS-Level-1_1</h3>
+
+                <div class="border-2 border-rb-red p-[2rem] rounded-md flex flex-col justify-center items-center gap-[2vh]">
+                    <h3 class="text-[1.2rem]">・ My shoppinglist ・</h3>
+
+                    <input class="rounded-md p-[0.5rem]" type="text" id="inputText1" placeholder="I need..." />
+                    <button class="basicBtn border-rb-red transition ease-linear hover:text-rb-beige hover:bg-rb-red">Add your items</button>
+
+                    <p class="text-[0.9rem] italic text-rb-grey-beige">Your items are:</p>
+                    <ul id="myList" class="text-[0.8rem]">
+                    </ul>
+                </div>
+                
+            </article>
+        </section>
+     
+    </main>
+</body>
+</html>

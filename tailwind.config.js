@@ -34,6 +34,14 @@ export default {
             "stairs-dark-blue": "#3f4c6c",
             "stairs-light": "#ededde",
             
+            // red bath
+            "rb-red": "#961312",
+            "rb-iceblue": "#d0e6ed",
+            "rb-grey-beige": "#beaa8b",
+            "rb-beige": "#f0dcb7",
+            "rb-forest": "#3c502d",
+            "rb-mint": "#68a086",
+            "rb-brown": "#6a341a",
     },
     },
   },
