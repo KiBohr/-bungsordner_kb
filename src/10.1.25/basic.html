@@ -72,16 +72,56 @@
                     <h3 class="text-[1.2rem]">・ My shoppinglist ・</h3>
 
                     <input class="rounded-md p-[0.5rem]" type="text" id="inputText1" placeholder="I need..." />
-                    <button class="basicBtn border-rb-red transition ease-linear hover:text-rb-beige hover:bg-rb-red">Add your items</button>
+                    <button id="add-button" class="basicBtn border-rb-red transition ease-linear hover:text-rb-beige hover:bg-rb-red">Add your items</button>
 
                     <p class="text-[0.9rem] italic text-rb-grey-beige">Your items are:</p>
+                    <div class="text-[0.8rem] font-thin" id="alert"></div>
                     <ul id="myList" class="text-[0.8rem]">
                     </ul>
                 </div>
-                
+            </article>
+
+            <article class="flex flex-col  gap-[4vh] p-[2rem] border-b-2 border-rb-red mb-[10vh]">
+                <h3 class="text-[1.3rem]">Dom-Elements-TS-Level-1_2</h3>
+
+                <div class="style">
+                    <div class="example">Ein div mit class="example".</div>
+              
+                    <div class="example">Ein weiteres div mit class="example".</div>
+              
+                    <p class="example">Dies ist ein p-Element mit class="example"</p>
+              
+                    <p>Dies ist ein <span class="example">span</span> Element mit class="example" in einem anderen p-Element.</p>
+              
+                    <p>Klicken Sie auf die Button, um die Hintergrundfarbe aller Elemente mit class="example" zu ändern.</p>
+              
+                    <button id="toggle-button" class="example">Versuchen Sie es</button>
+                  </div>
+            </article>
+
+            <article class="flex flex-col items-center gap-[4vh] p-[2rem] border-b-2 border-rb-red mb-[10vh]">
+                <h3 class="text-[1.3rem]">DOM-TS-Level-1_5</h3>
+                <div class="border-2 border-red-800 p-[1rem] rounded-md flex flex-col justify-center items-center gap-[5vh]">
+                    <h2>Get the current URL</h2>
+                    <button class="basicBtn border-red-700" id="URL-button">Click me to get the current URL</button>
+                    <p class="text-[0.7rem]">Your current URL:</p>
+                    <div class="cursor-pointer" id="URL-output"></div>
+                </div>
+            </article>
+<!-- ? last exercise -->
+            <article class="flex flex-col items-center gap-[4vh] p-[2rem] border-b-2 border-rb-red mb-[10vh]">
+                <h3 class="mb-[5vh">Dom-Elements-TS-Level-2_3 </h3>
+                <div class="headerStyling w-[100%]">
+                    <div class="flex justify-center items-center gap-[1vw]">
+                    <a id="home" href="">Home</a>
+                    <a id="news" href="">News</a>
+                    <a id="contact" href="">Contact</a>
+                    </div>
+
+                    <button id="header-button" class="colorButton">Change me</button>
+                </div>
             </article>
         </section>
-     
     </main>
 </body>
 </html>

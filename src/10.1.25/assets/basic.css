@@ -7,3 +7,67 @@
   background-color: rgb(246, 246, 153);
   color: blue;
 }
+
+.example {
+  background-color: indianred;
+  color: beige;
+  border-radius: 3px;
+  padding: 2px;
+  margin-bottom: 2vh;
+  width: 30%;
+}
+
+.example1 {
+  background-color: beige;
+  color: indianred;
+  border-radius: 3px;
+  padding: 2px;
+  margin-bottom: 2vh;
+}
+
+/* *Dom-Elements-TS-Level-2_3 */
+/* ? bevore  first click */
+.headerStyling {
+  color:white;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 1rem;
+}
+
+.colorButton {
+  background-color: rgb(51, 182, 51);
+  color:white;
+  padding: 1rem;
+}
+
+/* ?after click */
+
+.colorHome {
+  color: grey;
+  background-color: #f6c89f;
+  padding: 16px 0;
+}
+
+.colorNews {
+  color: grey;
+  background-color: #ffe7d1;
+  padding: 16px 0;
+ 
+}
+
+.colorContact {
+  color: grey;
+  background-color: #4b8e8d;
+  padding: 16px 0;
+ 
+}
+
+.colorButtonAfter{
+  color: grey;
+}
+
+
+
+

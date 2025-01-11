@@ -83,6 +83,7 @@ console.log("Hi Friday");
 console.log("Übungen:");
 // * DOM-TS_Level-1_4
 console.log("DOM-TS_Level-1_4:");
+console.log("Date und Input ausgeben");
 
 // elemente holen
 const textButton = document.querySelector<HTMLButtonElement>("#text-button");
@@ -110,6 +111,8 @@ if (textButton && textInput && textOutput) {
 }
 
 // * DOM-TS-Level-1_2
+console.log("DOM-TS-Level-1_2:");
+console.log(".innerHTML nutzen");
 
 // Elemente ziehen
 const infoElement = document.querySelector<HTMLDivElement>("#info");
@@ -165,8 +168,105 @@ if (galleryElement) {
 }
 
 // * Dom-Elements-TS-Level-1_1
+console.log("Dom-Elements-TS-Level-1_1:");
+console.log("Einkausliste");
 //? create Elements
 
 // build a shoping list
 
-//1.
+//1. get the elements
+const addingButton = document.querySelector<HTMLButtonElement>("#add-button");
+const inputElement = document.querySelector<HTMLInputElement>("#inputText1");
+const outputElement = document.querySelector<HTMLUListElement>("#myList");
+const alertOutput = document.querySelector<HTMLDivElement>("#alert");
+//2. if for the elemts
+//3. function, die auf das inputfeld zugreift und in ein outputfeld weitergibt
+if (addingButton && inputElement && outputElement && alertOutput) {
+  addingButton.addEventListener("click", function () {
+    event?.preventDefault();
+    let inputValue = inputElement.value;
+    // soll prüfen, ob das Eingabefeld leer ist oder nicht
+    if (inputElement.value.length !== 0) {
+      const newListElement1 = document.createElement("li");
+
+      newListElement1.textContent = `✰${inputValue}`;
+
+      outputElement.appendChild(newListElement1);
+      // sodass das inputfeld nach click wieder leer ist
+      inputElement.value = "";
+      // gibt alert message, wenn das input feld leer war bei click
+    } else {
+      alertOutput.innerHTML = `You did not add anything. Please make sure to type in your next item before clicking the Button. `;
+    }
+  });
+}
+
+// * Dom-Elements-TS-Level-1_2
+console.log("Dom-Elements-TS-Level-1_2:");
+console.log(".toggle() wird in einer Funktion genutzt");
+//? function, die mit classList.toggle() den bg von elementen der class = "example" verändert
+
+//? 1. class mit .example in css definieren
+
+//? 2. button ziehen
+
+const toggleButton = document.querySelector("#toggle-button");
+
+//? 2. function schreiben, die die gewollten Elemente triggert
+
+if (toggleButton) {
+  toggleButton.addEventListener("click", function () {
+    const allExampleElements = document.getElementsByClassName("example"); //creates an array like list of the elements
+    console.log(allExampleElements);
+
+    allExampleElements[0].classList.toggle("example1"); // with the [] we can select the elements in the arraylike list
+    allExampleElements[1].classList.toggle("example1");
+    allExampleElements[2].classList.toggle("example1");
+    allExampleElements[3].classList.toggle("example1");
+    allExampleElements[4].classList.toggle("example1");
+  });
+}
+
+// *DOM-TS-Level-1_5
+console.log("DOM-TS-Level-1_5");
+console.log("URL im HTML ausgeben lassen");
+
+//? get elements
+
+const URLButtton = document.querySelector("#URL-button");
+
+const URLOutputElement = document.querySelector("#URL-output");
+
+//? get the current URL with window.location.href
+const currentURL = window.location.href;
+
+if (URLButtton && URLOutputElement && currentURL) {
+  URLButtton.addEventListener("click", function () {
+    URLOutputElement.innerHTML = `<p>✦ ${currentURL} ✦</p>`;
+  });
+}
+
+// * Dom-Elements-TS-Level-2_3
+console.log("Dom-Elements-TS-Level-2_3");
+console.log(".getElementsByTagName");
+
+//?  create classes mit den Farben
+//? 1. get elements
+const headerButton =
+  document.querySelector<HTMLButtonElement>("#header-button");
+
+const headerElements = document.getElementsByTagName("a");
+console.log(headerElements);
+
+//? 2. if schleife
+if (headerButton && headerElements) {
+  //? 3. addEventlistener()
+  headerButton.addEventListener("click", function () {
+    //? 4. add classList.toggle()
+    headerButton.classList.toggle("colorButtonAfter");
+
+    headerElements[1].classList.toggle("colorHome");
+    headerElements[2].classList.toggle("colorNews");
+    headerElements[3].classList.toggle("colorContact");
+  });
+}
