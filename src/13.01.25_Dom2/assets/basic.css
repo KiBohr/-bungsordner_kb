@@ -1,0 +1,11 @@
+#bower-nest{
+    border: 1px dashed mediumseagreen;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+#bower-nest-icon{
+    font-size: 30px
+}

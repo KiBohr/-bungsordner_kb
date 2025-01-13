@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13.01.25_DOM2</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./assets/basic.css">
+    <script type="module" src="basic.ts" defer></script>
+
+</head>
+<body class="m-[3rem] bg-rb-forest text-rb-mint">
+    <header class="flex justify-between items-center mb-[10vh]">
+        <h1 class="text-[2rem]">13.01.25 - DOM2</h1>
+        <a class="basicBtn border-rb-mint transition ease-in-out hover:border-rb-forest hover:text-rb-forest hover:bg-rb-mint" href="../../index.html">back to the start</a>
+    </header>
+    <main>
+        <section>
+            <article class="bg-rb-beige rounded-md flex flex-col items-center mb-[5vh] p-[1rem]">
+                <h2 class="text-[1.5rem]">LiveCode</h2>
+
+                <p id="hover-me">Hover me!</p>
+            </article>
+
+            <article class="bg-rb-beige rounded-md flex flex-col items-center mb-[5vh] p-[1rem]">
+                <h2 class="text-[1.5rem]">Counter</h2>
+                <button class="basicBtn border-rb-mint" type="button" id="counter-button">Count is: 0</button>
+
+            </article>
+
+            <article class="bg-rb-beige rounded-md flex flex-col items-center mb-[5vh] p-[1rem]" >
+                <h3>Bower Bird Nest Experience</h3>
+                <select name="" id="bower-select">
+                    <option value="🖌️">🖌️</option>
+                    <option value="🍀">🍀</option>
+                    <option value="🦕">🦕</option>
+                    <option value="🫐">🫐</option>
+                    <option value="🎁">🎁</option>
+                    <option value="🌳">🌳</option>
+                </select>
+                <button id="bower-add-button">Add to Nest?</button>
+                <div id="bower-nest">🪹</div>
+                <div id="bower-trash"></div>
+            </article>
+        </section>
+        <!-- !Übungen -->
+        
+        <section class="bg-rb-iceblue text-rb-red rounded-md p-[1rem]">
+            <h2 class="text-[1.5rem] mb-[5vh]">Übungen</h2>
+            <!-- ? Dom-Elements-TS-Level-1_3-->
+            <article class="mb-[10vh]">
+                <h2 class="text-[1.2rem] mb-[4vh]">Dom-Elements-TS-Level-1_3</h2>
+                <div class="flex gap-4 justify-between border-rb-red border-2 p-[1rem] rounded-md">
+                    <ul id="myList" class="flex flex-col gap-[2vh]">
+                        <li>Super Mario World</li>
+                        <li>The Legend of Zelda</li>
+                        <li>Portal 2</li>
+                        <li>Tetris</li>
+                        <li>Half-Life 2</li>
+                        <li>Red Dead Redemption</li>
+                        <li>Grand Theft Auto V</li>
+                      </ul>
+                      <div id="unten" class="flex flex-col ">
+                        <button id="btn1" class="basicBtn border-rb-red"># firstElementChild</button><br />
+                        <button id="btn2" class="basicBtn border-rb-red"># lastElementChild</button><br />
+                        <button id="btn3" class="basicBtn border-rb-red"># firstElementChild nextElementSibling</button><br />
+                        <button id="btn4" class="basicBtn border-rb-red"># lastElementChild previousElementSibling</button>
+                      </div>
+                  
+                      <div class="flex flex-col items-center justify-center pr-[10vw]">
+                        <h2 class="underline text-[1.2rem]">Output</h2>
+                      <output class=" text-red-400" id="output"></output>
+                      </div>
+                </div>
+            </article>
+
+<!-- ? Dom-Elements-TS-Level-1_9 -->
+            <article class="mb-[10vh]">
+                <h2 class="text-[1.2rem] mb-[4vh]">Dom-Elements-TS-Level-1_9</h2>
+                <div class="w-[50%] flex">
+                    <form class="border-2 border-rb-red p-[1rem] rounded-md flex gap-5">
+                        <select class="rounded-md" id="farbeAuswahlen">
+                          <option>Medium Orchid</option>
+                          <option>Mint Cream</option>
+                          <option>Dodger Blue</option>
+                          <option>Goldenrod</option>
+                          <option>Wheat</option>
+                          <option>Medium Turquoise</option>
+                          <option>Moccasin</option>
+                          <option>Fire Brick</option>
+                          <option>Lime Green</option>
+                          <option>Slate Gray</option>
+                        </select>
+                        <button class="basicBtn border-rb-red" id="button" type="button">Farbe von Liste Entfernen</button>
+                      </form>
+                </div>
+            </article>
+
+            <!-- ? Dom-Elements-TS-Level-2_2 -->
+             <article class="mb-[10vh]">
+                <h2 class="text-[1.2rem] mb-[4vh]">Dom-Elements-TS-Level-2_2</h2>
+                <div>
+                    <form id="form1" class="border-2 rounded-md border-rb-red p-[1rem] w-[30%] flex flex-col items-start justify-center gap-3">
+                        <div>
+                             <label for="vorname">First name:</label>
+                            <input class="rounded-md p-[0.2rem]" type="text" id="first-name" name="vorname" placeholder="Dein Name..." />
+                        </div>
+                       
+                        <div>
+                            <label for="nachname">Last Name:</label>
+                            <input class="rounded-md p-[0.2rem]" type="text" id="last-name" name="nachname" placeholder="Dein Nachname..." />
+                        </div>
+                        
+                        <div>
+                            <label for="land">Land</label>
+                            <select id="land" name="land">
+                                <option value="Australia">Australia</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Usa">USA</option>
+                            </select>
+                        </div>
+                        
+                        <input class="basicBtn border-rb-red cursor-pointer self-center" type="submit" value="Submit" id="submit" />
+
+                        <div id="output1"></div>
+                    </form>
+                </div>
+             </article>
+
+<!-- ? Dom-Elements-TS-Level-2_4 -->
+             <article class="mb-[10vh]">
+                <h2 class="text-[1.2rem] mb-[4vh]">Dom-Elements-TS-Level-2_4</h2>
+                <div id="background-to-be-colored" class="border-2 rounded-md border-rb-red p-[1rem] w-[30%] ">
+                    <form class="flex items-center justify-around">
+                        <select id="colorChoice">
+                          <option  id="1">Medium Orchid</option>
+
+                          <option id="2">Mint Cream</option>
+
+                          <option id="3">Dodger Blue</option>
+
+                          <option id="4">Goldenrod</option>
+
+                          <option id="5">Wheat</option>
+
+                          <option id="6">Medium Turquoise</option>
+                          <option id="7">Moccasin</option>
+
+                          <option id="8">Fire Brick</option>
+
+                          <option id="9">Lime Green</option>
+
+                          <option id="10">Slate Gray</option>
+
+                        </select>
+                        <button class="basicBtn border-rb-red" type=button id="button2">Color this box</button>
+                      </form>
+                </div>
+             </article>
+
+        </section>
+    </main>
+</body>
+</html>
