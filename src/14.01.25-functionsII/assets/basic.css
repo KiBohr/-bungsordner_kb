@@ -1,0 +1,28 @@
+.circle{
+    border: 2px solid rgb(13, 54, 24);
+    border-radius: 90px;
+    height: 6rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.circle:hover{
+    box-shadow: 2px 1px rgb(13, 54, 24);
+}
+
+#circle-1{
+    background-image: linear-gradient(to top right, #319b5e 50%,#79096a 50%);
+    
+}
+
+#circle-2{
+    background-image: linear-gradient(to top right, #4f4c7b 50%,#dfb74c 50%);
+}
+
+#circle-3{
+    background-image: linear-gradient(to top right, #010023 50%,#cf6b0b 50%);
+}
+
+#circle-4{
+    background-image: linear-gradient(to top right, #07065d 50%,#43d4fe 50%);
+}

@@ -42,6 +42,15 @@ export default {
             "rb-forest": "#3c502d",
             "rb-mint": "#68a086",
             "rb-brown": "#6a341a",
+
+            // glascolors
+            "glas-red": "#bb0520",
+            "glas-green": "#123813", 
+            "glas-orange": "#da3a0a", 
+            "glas-base": "#e6e9f2",
+            "glas-beige": "#d7ab86",
+            "glas-brown": "#984732",
+            "glas-light-brown": "#ecd9cb",
     },
     },
   },
