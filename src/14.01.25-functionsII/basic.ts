@@ -213,7 +213,7 @@ console.log("Monster four:");
 console.log(monster4);
 
 // * Functions-TS-Level-3_1
-
+console.log("Functions-TS-Level-3_1");
 // function, die jeweils background und Schriftfarbe verändern mit den farben des geglickten circles
 
 //elemente selectieren
@@ -244,34 +244,29 @@ if (
     headline.style.color = "#79096a";
     resetButton.style.color = "#79096a";
     resetButton.style.borderColor = "#79096a";
-    console.log("i have been clicked");
   });
   circle2.addEventListener("click", function () {
     background1.style.backgroundColor = "#4f4c7b";
     headline.style.color = "#dfb74c";
     resetButton.style.color = "#dfb74c";
     resetButton.style.borderColor = "#dfb74c";
-    console.log("i have been clicked");
   });
   circle3.addEventListener("click", function () {
     background1.style.backgroundColor = "#010023";
     headline.style.color = "#cf6b0b";
     resetButton.style.color = "#cf6b0b";
     resetButton.style.borderColor = "#cf6b0b";
-    console.log("i have been clicked");
   });
   circle4.addEventListener("click", function () {
     background1.style.backgroundColor = "#07065d";
     headline.style.color = "#43d4fe";
     resetButton.style.color = "#43d4fe";
     resetButton.style.borderColor = "#43d4fe";
-    console.log("i have been clicked");
   });
   resetButton.addEventListener("click", function () {
     background1.style.backgroundColor = "#ecd9cb";
     headline.style.color = "#123813";
     resetButton.style.color = "#123813";
     resetButton.style.borderColor = "#123813";
-    console.log("i have been clicked");
   });
 }
