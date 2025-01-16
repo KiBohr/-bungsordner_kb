@@ -29,6 +29,11 @@
   src: url("./main_assets/fonts/Syncopate-Regular.ttf");
 }
 
+@font-face {
+  font-family: tiny;
+  src: url("./main_assets/fonts/Tiny5-Regular.ttf");
+}
+
 /* *startseite */
 .header1 {
   @apply text-[3rem] text-burnt-red uppercase;
@@ -51,3 +56,25 @@
 .basicBtn {
   @apply text-[0.9rem] border-2 rounded-lg p-[0.7rem] text-center;
 }
+
+
+
+/* * Hangman */
+.hmBtn {
+  @apply text-[1.5rem] border-2 rounded-sm p-[0.3rem] text-center w-[3rem] h-[3rem] ; border-color: #d8ac2f;
+}
+.hmBtn:hover{
+  border-color: rgb(185, 42, 42);color: rgb(185, 42, 42); transition: linear; transition-duration: 0.2s;}
+
+.hmBtnAgain{
+  @apply  p-[1rem];
+}
+
+.hmBtnAgain:hover{
+  transition: linear; transition-duration: 0.2s; text-decoration: underline;
+}
+  
+.hmTimer{
+    @apply text-[2.5rem] text-rb-red
+  }
+

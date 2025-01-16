@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <script type="module" src="./Hangman.ts"></script>
+    <title>Hangman</title>
+</head>
+<body class="bg-stairs-beige m-[3rem] text-stairs-olive font-[syn]">
+    <header class="flex justify-between items-center mb-[5vh] border-b-stairs-olive">
+        <h1>Hangman Game</h1>
+        <a class="transition ease-linear hover:text-stairs-yellow" href="../../basic.html">back to 15.01.25</a>
+    </header>
+
+    <main>
+        <!-- ? timer, keyboard, output with character lines, newGame Button -->
+        <section>
+            <article class="flex flex-col gap-[5vh] justify-center items-center">
+                <!-- ? timer -->
+                <div class="hmTimer" id="timer-output">4:00</div>
+                <!-- ? keyboard -->
+                <div class="bg-amber-100 p-[2rem] rounded-sm w-[50%] flex gap-[1vw] flex-wrap justify-center items-center">
+                    <button class="hmBtn " type="button" >A</button>
+                    <button class="hmBtn " type="button" >B</button>
+                    <button class="hmBtn " type="button" >C</button>
+                    <button class="hmBtn " type="button" >D</button>
+                    <button class="hmBtn " type="button" >E</button>
+                    <button class="hmBtn " type="button" >F</button>
+                    <button class="hmBtn " type="button" >G</button>
+                    <button class="hmBtn " type="button" >H</button>
+                    <button class="hmBtn " type="button" >I</button>
+                    <button class="hmBtn " type="button" >J</button>
+                    <button class="hmBtn " type="button" >K</button>
+                    <button class="hmBtn " type="button" >L</button>
+                    <button class="hmBtn " type="button" >M</button>
+                    <button class="hmBtn " type="button" >O</button>
+                    <button class="hmBtn " type="button" >P</button>
+                    <button class="hmBtn " type="button" >Q</button>
+                    <button class="hmBtn " type="button" >R</button>
+                    <button class="hmBtn " type="button" >S</button>
+                    <button class="hmBtn " type="button" >T</button>
+                    <button class="hmBtn " type="button" >U</button>
+                    <button class="hmBtn " type="button" >V</button>
+                    <button class="hmBtn " type="button" >W</button>
+                    <button class="hmBtn " type="button" >X</button>
+                    <button class="hmBtn " type="button" >Y</button>
+                    <button class="hmBtn " type="button" >Z</button>
+                </div>
+                <div>
+                    <div class="text-[5rem]">_ _ _ _ _ _ _</div>
+                </div>
+                <div class="flex gap-[10vw]">
+                    <button class="hmBtnAgain">Start over</button>
+                    <button class="hmBtnAgain">New game</button>
+
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

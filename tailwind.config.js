@@ -51,6 +51,18 @@ export default {
             "glas-beige": "#d7ab86",
             "glas-brown": "#984732",
             "glas-light-brown": "#ecd9cb",
+
+            //glasblocks
+            "block-yellow": "#d5bb42",
+            "block-light-yellow": "#ecc564",
+            "block-olive": "#715724",
+            "block-grey": "#c1cace",
+            "block-dusty-rose": "#a06279",
+            "block-magenta": "#651937",
+            "block-beige": "#d5bb96",
+            "block-sage": "#79b76d",
+            "block-brown": "#502f23",
+
     },
     },
   },

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script type="module" src="./basic.ts" defer></script>
+    <title>16.1.25</title>
+</head>
+<body class="m-[3rem] bg-yellow-100 text-dark-blue font-[tiny]">
+    <header class="flex justify-between items-center mb-[10vh] p-[2rem]rounded-md border-b-dark-blue border-b-2">
+        <h1 class="text-[1.5rem]">16.01.2025 - Flowcharts</h1>
+        <a class="basicBtn border-dark-blue mb-[2vh] transition ease-in-out hover:text-burnt-red hover:border-burnt-red " href="../../index.html">back to the start</a>
+    </header>
+    <main>
+        <section class=" rounded-md text-glas-orange">
+            <h3 class="text-[1.2rem]">Project-TS Panini Sammlerkarten</h3>
+            <article>
+                <form class="bg-lime flex flex-col justify-center items-center gap-[3vh] text-glas-green rounded-sm p-[2rem]">
+                    <div class="flex items-center gap-[3vw]">
+                        <div class="w-16">
+                            <img class="object-cover" src="./assets/img/mew.png" alt="a pixel art of the pokemon mew">
+                        </div>
+                        <h2 class="text-[2rem]">Create your Pokemoncard:</h2>
+                    </div>
+                    
+                    <div>
+                        <input class="p-[0.3rem] text-dark-blue text-[1.2rem] rounded-sm transition ease-linear hover:bg-rb-iceblue" type="text" name="pokemon-name" id="name" placeholder="name your pokemon">
+                    </div>
+                    <div>
+                        <input class="p-[0.3rem] text-mid-blue rounded-sm transition ease-linear hover:bg-rb-iceblue" type="text" name="pokemon-elemnt" id="element" placeholder="main element">
+                        <input class="p-[0.3rem] text-mid-blue rounded-sm transition ease-linear hover:bg-rb-iceblue" type="text" name="pokemon-attack" id="attack" placeholder="main attack">
+                    </div>
+                    <div>
+                        <input class="p-[0.3rem] text-mid-blue rounded-sm transition ease-linear hover:bg-rb-iceblue" type="number" name="pokemon-health-points" id="health-points" placeholder="health-points">
+                        <input class="p-[0.3rem] text-mid-blue rounded-sm transition ease-linear hover:bg-rb-iceblue" type="number" name="pokemon-attack-points" id="attack-points" placeholder="attack-points">
+                    </div>
+                    <div>
+                        <input class="p-[0.3rem] text-dark-green rounded-sm transition ease-linear hover:bg-rb-iceblue" type="text" name="pokemon-resistance" id="resistance" placeholder="resitant against" max="2000" min="50">
+                        <input class="p-[0.3rem] text-burnt-red rounded-sm transition ease-linear hover:bg-rb-iceblue" type="text" name="pokemon-weekness" id="weekness" placeholder="weekness for" max="2000" min="50">
+                    </div>
+                    <input class="p-[0.3rem] w-[28%] text-[0.8rem] text-dark-green rounded-sm transition ease-linear hover:bg-rb-iceblue" type="url" placeholder="link of your picture" id="url">
+                    <button class="border-2 rounded-sm p-[0.3rem] border-glas-green transition ease-linear hover:border-burnt-red hover:text-burnt-red" type="submit" id="create">Create card</button>
+                </form>
+                <!-- ? output Card -->
+                 
+                <div class="font-[poppins] text-slate-500 text-[1rem]" id="card-output">
+                 </div>
+            </article>
+        </section>
+    </main>  
+</body>
+</html>
