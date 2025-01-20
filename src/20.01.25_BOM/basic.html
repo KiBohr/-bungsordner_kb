@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./basic.ts"></script>
+    <script type="module" src="./Übungen/Bom-TS-Level-1_1/E1.ts"></script>
+    <script type="module" src="./Übungen/Bom-TS-Level-1_2/E2.ts"></script>
+    <script type="module" src="./Übungen/Bom-TS-Level-1_3/E3.ts"></script>
+    <script type="module" src="./Übungen/Bom-TS-Level-2_1/E4.ts"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>25.01.25_BOM</title>
+</head>
+<body class="m-[3rem]">
+    <header class="flex justify-between items-center mb-[10vh]">
+        <h1 class="text-[2rem]">BOM</h1>
+        <a href="../../index.html">back to the start</a>
+    </header>
+
+    <main>
+        <section class="flex items-center justify-center">
+            <article class="bg-rose-50 p-3 flex flex-col gap-6">
+                <h2 class="text-xl">LiveCode</h2>
+                <div class=" flex gap-[2vw] items-center border-2 border-red-600 p-[1rem] bg-red-100 rounded-xl">
+                    <p>aktuelle Zeit:</p>
+                    <div class="text-[1.2rem] text-red-600" id="timeoutput"></div>
+                </div>
+                <button type="button" id="time-stop" class="border-2 rounded-xl border-orange-600 p-3">Stop Time</button>
+            </article>
+        </section>
+        <section>
+            <article class="bg-amber-200 p-4 rounded-lg">
+                <h2 class="text-xl mb-2">Exercises</h2>
+                <!-- ? E1 -->
+                <div class="mb-4">
+                    <h3>Bom-TS-Level-1_1"</h3>
+                    <p>in console</p>
+                </div>
+                <!-- ?E2 -->
+                <div class="mb-4 flex flex-col gap-4">
+                    <h3>Bom-TS-Level-1_1"</h3>
+                    <div id="style" class="flex items-center gap-5">
+                        <div id="zeit">100%</div>
+                        <button class="border-2 rounded-xl p-2 border-yellow-600" id="btn">Start</button>
+                    </div>
+                </div>
+                <!-- ? E3 -->
+                <div class="mb-4">
+                    <h3>Bom-TS-Level-1_3"</h3>
+                    <h3 class="mb-4">BOM elemente:</h3>
+                    <div class=" text-xs flex flex-col gap-2" id="bom-output"></div>
+                </div>
+
+                <!-- ? E4 -->
+                <div class="message">
+                    <h3>Bom-TS-Level-2_1</h3>
+                    <p id="self-destroying-p">Diese Meldung wird automatisch verschwinden in:</p>
+                    <div id="self-destroying-count">10</div>
+                </div>
+
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -28,7 +28,7 @@ if (buttonContainerElement) {
   for (let i = 0; i <= allColors.length - 1; i++) {
     const newButton = document.createElement("button");
 
-    newButton.style.background = `[${allColors[i]}]`;
+    newButton.style.background = allColors[i];
 
     buttonContainerElement.appendChild(newButton);
   }
