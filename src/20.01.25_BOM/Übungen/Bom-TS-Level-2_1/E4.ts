@@ -16,7 +16,7 @@ if (selfDestroyingCountElement && selfDestroyingTextElement) {
     if (count >= 0) {
       selfDestroyingCountElement.textContent = `${count--}`;
     } else if (count < 0) {
-      selfDestroyingCountElement.textContent = ``;
+      selfDestroyingCountElement.style.opacity = "0";
       selfDestroyingTextElement.textContent = ``;
     }
   }, 1000);
