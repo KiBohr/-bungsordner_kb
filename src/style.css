@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: roboto;
-  src: url("./main_assets/fonts/roboto");
+  src: url("./main_assets/fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
@@ -32,6 +32,11 @@
 @font-face {
   font-family: tiny;
   src: url("./main_assets/fonts/Tiny5-Regular.ttf");
+}
+
+@font-face {
+  font-family: space-mono;
+  src: url("./main_assets/fonts/SpaceMono-Regular.ttf");
 }
 
 /* *startseite */
