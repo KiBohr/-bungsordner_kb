@@ -8,31 +8,28 @@
     <title> Projekt FakeStore</title>
 </head>
 <body class="m-5 text-stairs-olive">
-    <header class="flex flex-col justify-center items-center gap-8 mb-10">
-        <div>
-             <h1 class="text-5xl bg-stairs-light-yellow px-80 py-5 rounded-md">SuperFakeStore</h1>
+    <header class="flex flex-col justify-center items-center gap-5 mb-5 ">
+        <div class ="bg-stairs-light-yellow w-full p-10 rounded-md relative">
+             <h1 class="text-5xl text-center">SuperFakeStore</h1>
+             <div class="absolute top-12 right-10 h-20 overflow-hidden ">
+                <img class="object-cover h-10  transition ease-out hover:drop-shadow-xl" src="./assets/img/shopping-bag.png" alt="an icon of a shopping-bag">
+             </div>
+             
         </div>
-        <nav class="flex flex-col gap-2 text-xl">
-            <div class="flex items-center justify-end gap-4 mb-5">
-                <label for="search-Input">Search</label>
+        <nav class="flex flex-col gap-2 w-full">
+            <div class="flex items-center justify-center gap-4 mb-5">
+                <label class="font-bold" for="search-Input">Search</label>
                 <input class="bg-white border-2 border-stairs-olive p-1 rounded-md" id="search-Input" type="text">
                 <select name="sort-by" id="sort">
-                    <option value="default">sort by</option>
+                    <option value="">Sort by</option>
                     <option value="price">price</option>
                     <option value="rating">rating</option>
                     
                 </select>
             </div>
-            <div class="bg-white text-base flex items-center gap-6">
+            <div id="filter-output" class="bg-white text-base flex items-center gap-6 justify-center">
                 <p>Filter by Categories</p>
-                <button class="border-2 border-stairs-olive p-1 rounded-md
-                transition ease-in-out hover:text-white hover:border-white hover:bg-stairs-olive" id="button-electronics" type="button">electronics</button>
-                <button class="border-2 border-stairs-olive p-1 rounded-md
-                transition ease-in-out hover:text-white hover:border-white hover:bg-stairs-olive" id="button-jewelery" type="button">jewelery</button>
-                <button class="border-2 border-stairs-olive p-1 rounded-md
-                transition ease-in-out hover:text-white hover:border-white hover:bg-stairs-olive" id="button-men-clothing" type="button">man´s clothing</button>
-                <button class="border-2 border-stairs-olive p-1 rounded-md
-                transition ease-in-out hover:text-white hover:border-white hover:bg-stairs-olive" id="button-woman-clothing" type="button">woman´s clothing</button>
+                
             </div>
         </nav>
     </header>
