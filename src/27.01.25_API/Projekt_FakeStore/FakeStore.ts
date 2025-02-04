@@ -28,7 +28,6 @@ async function renderProducts(selectedProducts: Product[]) {
                     <p>${product.title}</p>
                 </div>
                 <div class="flex items-center gap-5 text-xl">
-                    <p>⭐️ ${product.rating.rate}</p>
                     <p>$${product.price}</p>
                     <button class=" text-base border-2 border-stairs-olive rounded-md p-1 transition ease-out hover:text-white hover:border-white hover:bg-stairs-olive" type="button">Add to card </button>
                 </div>
@@ -61,9 +60,9 @@ if (searchInput) {
 // * Funktion, die die Produkte nach Kategorien sortiert
 // in einer neuen Konstanten speichern, und mit await auspacken
 const categories = await getCategories();
-// console.log(categories); // ? -->  ['electronics', 'jewelery', "men's clothing", "women's clothing"]
+// console.log(categories); // / -->  ['electronics', 'jewelery', "men's clothing", "women's clothing"]
 
-//? auf click bei Buttons --> EventListener()
+//? die Funktion schreibt für jede Kategorie jeweils einen button in die dom, und gibt jedem Button die Funktion, auf Klick die gefilterten Produkte im Dom auszugeben
 
 categories?.forEach((category: string) => {
   if (filterArea) {
@@ -78,12 +77,16 @@ categories?.forEach((category: string) => {
     // add eventListener()
     newFilterButton.addEventListener("click", (event) => {
       event.preventDefault();
-      // !filterfunktion einbauen
 
-      allProducts?.filter((product) => {
-        if (product.category.includes("category")) {
-        }
+      // add filter
+      const filteredProducts = allProducts?.filter((product) => {
+        // filter braucht eine Information darüber, was behalten werden soll
+        return product.category === category;
       });
+      // sollte filtered Products existieren, dann schreibe die gefilterten Produkte in die Dom
+      if (filteredProducts) {
+        renderProducts(filteredProducts);
+      }
     });
 
     filterArea.appendChild(newFilterButton);
