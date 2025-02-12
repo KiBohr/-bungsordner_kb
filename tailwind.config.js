@@ -63,6 +63,15 @@ export default {
             "block-sage": "#79b76d",
             "block-brown": "#502f23",
 
+            //brain
+            "brain-brown": "#70453e",
+            "brain-beige": "#faddb5",
+            "brain-pink": "#f2a39c",
+            "brain-light-blue": "#b7c4e6",
+            "brain-blue": "#3b5091",
+            "brain-orange": "#d6432f",
+            "brain-senf": "#c07927",
+
     },
     },
   },
