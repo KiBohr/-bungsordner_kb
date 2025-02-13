@@ -2,7 +2,7 @@
 console.warn("OOP-Class-TS-Level-1_1:");
 // ? https://supercode.notion.site/OOP-Class-TS-Level-1_1-4ba7a4c6beb746a89d3faf3c30f6ec7e
 
-class IceCreamFlavor {
+export class IceCreamFlavor {
   name: string = "";
   price: number = 0;
   isPopular: boolean = false;
